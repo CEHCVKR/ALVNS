@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Agent-Less Vulnerability & Network Scanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="CSS/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/css2.css"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/css3.css"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/css4.css"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/css5.css"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <navbar-wrapper class="navbar-wrapper">
+          <!--Navbar component-->
+          <header class="navbar-container">
+            <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+              <img
+                alt="Company Logo"
+                src="images/fac575ac-7a41-484f-b7ac-875042de11f8.svg"
+                class="navbar-image1"
+              />
+              <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
+                <nav class="navbar-links1">
+                  <span class="thq-link thq-body-small"><span>Home</span></span>
+                  <span class="thq-link thq-body-small">
+                    <span href="#features-section" id="features-link">Features</span>
+                  </span>
+                  <span class="thq-link thq-body-small">
+                    <span>Links</span>
+                  </span>
+                </nav>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon1">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
+                <div class="navbar-nav">
+                  <div class="navbar-top">
+                    <img
+                      alt="Company Logo"
+                      src="images/fac575ac-7a41-484f-b7ac-875042de11f8.svg"
+                      class="navbar-logo"
+                    />
+                    <div data-thq="thq-close-menu" class="navbar-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar-icon3">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar-links2">
+                    <span class="thq-link thq-body-small">
+                      <span>Home</span>
+                    </span>
+                    <span class="thq-link thq-body-small">
+                      <span href="#features-section" id="features-link">Features</span>
+                    </span>
+                    <span class="thq-link thq-body-small">
+                      <span>Links</span>
+                    </span>
+                  </nav>
+                </div>
+              </div>
+            </header>
+          </header>
+        </navbar-wrapper>
+        <hero-wrapper class="hero-wrapper">
+          <!--Hero component-->
+          <div class="hero-header78">
+            <div class="hero-column thq-section-padding thq-section-max-width">
+              <div class="hero-content1">
+                <h1 class="hero-text1 thq-heading-1">
+                  <span>Agent-Less Vulnerability &amp; Network Scanner</span>
+                </h1>
+                <p class="hero-text2 thq-body-large">
+                  <span>
+                    Scan your network and systems for vulnerabilities without
+                    the need for any additional agents. Get comprehensive
+                    insights into potential security risks and protect your
+                    assets.
+                  </span>
+                </p>
+              </div>
+              <div class="hero-actions">
+                <button class="thq-button-filled hero-button1">
+                  <span class="thq-body-small"><span href="#get-started-section" id="get-started-link">Get Started</span></span>
+                </button>
+                <button class="thq-button-outline hero-button2">
+                  <span class="thq-body-small"><span href="#learn-more-section" id="learn-more-link">Learn More</span></span>
+                </button>
+              </div>
+            </div>
+            <div class="hero-content2">
+              <div
+                class="hero-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal"
+              >
+                <div class="thq-animated-group-horizontal">
+                  <img
+                    alt=""
+                    src="images/1.jpg"
+                    class="hero-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/2.webp"
+                    class="hero-placeholder-image11 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/3.png"
+                    class="hero-placeholder-image12 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/4.png"
+                    class="hero-placeholder-image13 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/5.jpg"
+                    class="hero-placeholder-image14 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/6.jpeg"
+                    class="hero-placeholder-image15 thq-img-scale thq-img-ratio-1-1"
+                  />
+                </div>
+                <div class="thq-animated-group-horizontal">
+                  <img
+                    alt=""
+                    src="images/1.jpg"
+                    class="hero-placeholder-image16 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/2.webp"
+                    class="hero-placeholder-image17 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/3.png"
+                    class="hero-placeholder-image18 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/4.png"
+                    class="hero-placeholder-image19 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/5.jpg"
+                    class="hero-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
+                  />
+                  <img
+                    alt=""
+                    src="images/6.jpeg"
+                    class="hero-placeholder-image21 thq-img-scale thq-img-ratio-1-1"
+                  />
+                </div>
+              </div>
+              
+            </div>
+            <div>
+              <div class="hero-container2">
+                <style>
+                  @keyframes scroll-x {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(calc(-100% - 16px));
+                    }
+                  }
+
+                  @keyframes scroll-y {
+                    from {
+                      transform: translateY(0);
+                    }
+                    to {
+                      transform: translateY(calc(-100% - 16px));
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </hero-wrapper>
+        <cta-wrapper class="cta-wrapper">
+          <!--CTA component-->
+          <div class="thq-section-padding">
+            <div class="thq-section-max-width">
+              <div class="cta-accent2-bg">
+                <div class="cta-accent1-bg">
+                  <div class="cta-container2">
+                    <div class="cta-content">
+                      <span class="thq-heading-2">
+                        <span>
+                          Get Started with Our Agent-Less Vulnerability &amp;
+                          Network Scanner Today
+                        </span>
+                      </span>
+                      <p class="thq-body-large">
+                        <span>
+                          Scan your network and identify vulnerabilities without
+                          the need for any agents. Improve your security posture
+                          now.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="cta-actions">
+                      <button
+                        type="button"
+                        class="thq-button-filled cta-button"
+                      >
+                        <span>Start Scanning</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </cta-wrapper>
+        <features2-wrapper class="features2-wrapper">
+          <!--Features2 component-->
+          <div class="thq-section-padding" id="get-started-section">
+            <div class="features2-container2 thq-section-max-width" id="features-section">
+              <div class="features2-tabs-menu">
+                <div class="features2-tab-horizontal1">
+                  <div class="features2-divider-container1">
+                    <div class="features2-container3"></div>
+                  </div>
+                  <div class="features2-content1">
+                    <h2 class="thq-heading-2"><span>Automated Vulnerability Scanning
+                    </span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Automatically scans systems for known vulnerabilities and misconfigurations, identifying potential security risks.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features2-tab-horizontal2">
+                  <div class="features2-divider-container2">
+                    <div class="features2-container4"></div>
+                  </div>
+                  <div class="features2-content2">
+                    <h2 class="thq-heading-2">
+                      <span>Agent-Less Scanning</span>
+                    </h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Scan your network and systems without the need for any
+                        additional software or agents.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="features2-tab-horizontal3">
+                  <div class="features2-divider-container3">
+                    <div class="features2-container5"></div>
+                  </div>
+                  <div class="features2-content3">
+                    <h2 class="thq-heading-2"><span>Real-time System Monitoring</span></h2>
+                    <span class="thq-body-small">
+                      <span>
+                        Monitors system activity in real-time, detecting and alerting on suspicious behavior and anomalies.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="features2-image-container">
+                <img
+                  alt="feature 1"
+                  src="images/man.png"
+                  class="features2-image1 thq-img-ratio-16-9"
+                />
+              </div>
+            </div>
+          </div>
+        </features2-wrapper>
+        <steps-wrapper class="steps-wrapper">
+          <!--Steps component-->
+          <div class="steps-container1 thq-section-padding"  id="learn-more-section">
+            <div class="steps-max-width thq-section-max-width">
+              <div class="steps-container2 thq-grid-2">
+                <div class="steps-section-header">
+                  <h2 class="thq-heading-2">
+                    Discover Vulnerabilities in your system
+                  </h2>
+                  <p class="thq-body-large">
+                    <b>Vulnerability Scanning:</b> "Automated scanning identifies vulnerabilities, assesses risks, and strengthens security, ensuring protection against threats and minimizing exposure to attacks and data breaches."
+                    <br><br>
+                    <b>Registry Auditing:</b> "Comprehensive registry examination detects anomalies, ensures compliance, and rectifies misconfigurations, maintaining system integrity and preventing unauthorized access and malicious activity."
+                    <br><br>
+                    <b>Reporting and Alerting:</b> "Detailed reporting and alerting provide insights, track security posture, and facilitate swift incident response, ensuring informed decision-making, effective risk management, and enhanced security."
+                  </p>
+                  <div class="steps-actions">
+                    <button
+                      class="thq-button-animated thq-button-filled steps-button"
+                    >
+                      <span class="thq-body-small" href="#contact-section" id="contact-link">Contact</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="steps-container3">
+                  <div class="steps-container4 thq-card">
+                    <h2 class="thq-heading-2">
+                      <span>Scan Configuration</span>
+                    </h2>
+                    <span class="steps-text14 thq-body-small">
+                      <span>
+                        Set up the scan parameters such as target IP ranges,
+                        scan frequency, and scan intensity.
+                      </span>
+                    </span>
+                    <label class="steps-text15 thq-heading-3">01</label>
+                  </div>
+                  <div class="steps-container5 thq-card">
+                    <h2 class="thq-heading-2"><span>Initiate Scan</span></h2>
+                    <span class="steps-text17 thq-body-small">
+                      <span>
+                        Start the vulnerability and network scan process with
+                        the configured settings.
+                      </span>
+                    </span>
+                    <label class="steps-text18 thq-heading-3">02</label>
+                  </div>
+                  <div class="steps-container6 thq-card">
+                    <h2 class="thq-heading-2"><span>View Results</span></h2>
+                    <span class="steps-text20 thq-body-small">
+                      <span>
+                        Access detailed reports and insights on identified
+                        vulnerabilities and network issues.
+                      </span>
+                    </span>
+                    <label class="steps-text21 thq-heading-3">03</label>
+                  </div>
+                  <div class="steps-container7 thq-card">
+                    <h2 class="thq-heading-2"><span>Remediate Issues</span></h2>
+                    <span class="steps-text23 thq-body-small">
+                      <span>
+                        Take necessary actions to address and fix the
+                        vulnerabilities and network security issues.
+                      </span>
+                    </span>
+                    <label class="steps-text24 thq-heading-3">04</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </steps-wrapper>
+        <contact-wrapper class="contact-wrapper">
+          <!--Contact component-->
+          <div class="contact-contact20 thq-section-padding" id="contact-section">
+            <div class="contact-max-width thq-section-max-width">
+              <div class="contact-section-title">
+                <span class="thq-body-small">
+                  <span>
+                    Our team is here to assist you with any inquiries or
+                    technical issues.
+                  </span>
+                </span>
+                <div class="contact-content1">
+                  <h2 class="thq-heading-2"><span>Contact Us</span></h2>
+                  <p class="contact-text3 thq-body-large">
+                    <span>
+                      Have a question or need support? Reach out to us!
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-content2">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info1">
+                    <div class="contact-content3">
+                      <h3 class="contact-text4 thq-heading-3">Email</h3>
+                      <p class="contact-text5 thq-body-large">
+                        <span>
+                          For general questions or feedback, please email us.
+                        </span>
+                      </p>
+                    </div>
+                    <span class="contact-email thq-body-small">
+                      <span>22bq1a4720@vvit.net</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content4">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info2">
+                    <div class="contact-content5">
+                      <h3 class="contact-text6 thq-heading-3">Phone</h3>
+                      <p class="contact-text7 thq-body-large">
+                        <span>
+                          If you require immediate assistance, feel free to give
+                          us a call.
+                        </span>
+                      </p>
+                    </div>
+                    <span class="contact-phone thq-body-small">
+                      <span>+91 80080 32092</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content6">
+                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info3">
+                    <div class="contact-content7">
+                      <h3 class="contact-text8 thq-heading-3">Office</h3>
+                      <p class="contact-text9 thq-body-large">
+                        <span>
+                          III-CIC(A) - Team Cyber Squad
+                        </span>
+                      </p>
+                    </div>
+                    <span class="contact-address thq-body-small">
+                      <span>Nambur, VVIT, Guntur, A.P, INDIA</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </contact-wrapper>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <footer class="footer-footer1 thq-section-padding">
+            <div class="footer-max-width thq-section-max-width">
+              <div class="footer-credits">
+                <div class="thq-divider-horizontal"></div>
+                <div class="footer-row">
+                  <span class="thq-body-small">
+                    <span>
+                      Agent-Less Vulnerability &amp; Network Scanner is a
+                      powerful tool for securing your network and systems.
+                    </span>
+                  </span>
+                  <div class="footer-footer-links3">
+                    <span class="thq-body-small"><span>/privacy</span></span>
+                    <span class="thq-body-small"><span>/terms</span></span>
+                    <span class="thq-body-small"><span>/cookies</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </footer-wrapper>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="JS/index.umd.js"
+    ></script>
+    <script>
+      document.getElementById('learn-more-link').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.getElementById('learn-more-section').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('get-started-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('get-started-section').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('features-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('features-section').scrollIntoView({ behavior: 'smooth' });
+      });
+  </script>
+  </body>
+</html>
