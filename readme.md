@@ -67,70 +67,7 @@ The solution should provide possible vulnerabilities of the underlying Windows O
 
 ## Example Output
 
-................................................................................................. 
-System Info 
-................................................................................................. 
-
-Host Name:                 CEHCVKR
-OS Name:                   Microsoft Windows 11 Home Single Language
-OS Version:                10.0.22631 N/A Build 22631
-OS Manufacturer:           Microsoft Corporation
-OS Configuration:          Standalone Workstation
-OS Build Type:             Multiprocessor Free
-Registered Owner:          ckkreddy89@gmail.com
-Registered Organization:   N/A
-Product ID:                00342-42641-20271-AAOEM
-Original Install Date:     11-01-2024, 11:39:01 AM
-System Boot Time:          03-09-2024, 6:05:38 PM
-System Manufacturer:       ASUSTeK COMPUTER INC.
-System Model:              VivoBook_ASUSLaptop M1603QA_M1603QA
-System Type:               x64-based PC
-Processor(s):              1 Processor(s) Installed.
-                           [01]: AMD64 Family 25 Model 80 Stepping 0 AuthenticAMD ~1882 Mhz
-BIOS Version:              American Megatrends International, LLC. M1603QA.308, 22-05-2023
-Windows Directory:         C:\WINDOWS
-System Directory:          C:\WINDOWS\system32
-Boot Device:               \Device\HarddiskVolume1
-System Locale:             en-us;English (United States)
-Input Locale:              en-us;English (United States)
-Time Zone:                 (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
-Total Physical Memory:     15,773 MB
-Available Physical Memory: 9,814 MB
-Virtual Memory: Max Size:  16,797 MB
-Virtual Memory: Available: 10,416 MB
-Virtual Memory: In Use:    6,381 MB
-Page File Location(s):     C:\pagefile.sys
-Domain:                    KARTHIK@HACKER
-Logon Server:              \\CEHCVKR
-Hotfix(s):                 4 Hotfix(s) Installed.
-                           [01]: KB5042099
-                           [02]: KB5027397
-                           [03]: KB5041587
-                           [04]: KB5041586
-Network Card(s):           3 NIC(s) Installed.
-                           [01]: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card
-                                 Connection Name: Wi-Fi
-                                 DHCP Enabled:    Yes
-                                 DHCP Server:     192.168.201.115
-                                 IP address(es)
-                                 [01]: 192.168.201.223
-                                 [02]: fe80::d1ab:a4e:c43:ac6
-                                 [03]: 2409:408c:1104:764a:3df4:6862:ffd8:55af
-                                 [04]: 2409:408c:1104:764a:c59:5164:984e:b91
-                           [02]: VMware Virtual Ethernet Adapter for VMnet1
-                                 Connection Name: VMware Network Adapter VMnet1
-                                 DHCP Enabled:    No
-                                 IP address(es)
-                                 [01]: 192.168.217.1
-                                 [02]: fe80::4da0:4313:d5e1:c6fd
-                           [03]: VMware Virtual Ethernet Adapter for VMnet8
-                                 Connection Name: VMware Network Adapter VMnet8
-                                 DHCP Enabled:    No
-                                 IP address(es)
-                                 [01]: 192.168.137.1
-                                 [02]: fe80::3633:6cb:c186:a521
-Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
-------------------------------------------------------------------------------------------------------------- 
+![System Info](1.png)
 ................................................................................................. 
 Installed Software with Unknown Publisher 
 ................................................................................................. 
@@ -263,4 +200,4 @@ DNS cache entries
 To run the script, simply execute it on a Windows machine. Ensure you have the necessary permissions to run system commands.
 
 ```bash
-ALVNS.bat
+C:\Users\ADMIN\ALVNS.bat
